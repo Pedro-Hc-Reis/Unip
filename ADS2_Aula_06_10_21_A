@@ -1,0 +1,83 @@
+class Program
+    {
+        static void Main(string[] args)
+        {/*
+            string NomeA;
+            double NotaA=0;
+            double SomaA = 0;
+            double MediaA=0;
+            int iA;
+
+            Console.Write("Exemplo com While !!!! \n");
+            Console.Write("Qual o nome do Aluno: ");
+            NomeA = Console.ReadLine();
+
+            iA = 0;
+            while(iA<3)
+            {
+                Console.Write("Nota : ");
+                NotaA = Convert.ToDouble(Console.ReadLine());
+                SomaA= SomaA + NotaA;
+                iA = iA + 1;
+            }
+            MediaA = SomaA / 3;
+            Console.WriteLine("Aluno : " + NomeA + " com a Media :" + MediaA);
+            */
+
+            /*
+            string NomeB;
+            double NotaB;
+            double SomaB = 0;
+            double MediaB;
+            int iB;
+
+            Console.Write("Exemplo com do While !!!! \n");
+            Console.Write("Qual o nome do Aluno: ");
+            NomeB = Console.ReadLine();
+
+            iB = 0;
+           
+            do
+            {
+              
+                Console.Write("Nota "+ (i+1) + ": ");
+                NotaB = Convert.ToDouble(Console.ReadLine());
+                SomaB = SomaB + NotaB;
+                // i += 1; // i = i + 1; // igual
+                iB++; // i += 1; // i = i + 1; // equivalente 
+                
+                // exemplo de i ++
+                //i = 1;
+                //i = 3 * i + 1;//== > 4
+                //i = 3 * i++; // ==>6   i =  3 * (i + 1);
+
+            } while (iB < 4) ;
+
+            MediaB = SomaB / iB;
+            Console.WriteLine("Aluno : " + NomeB + " com a Media :" + MediaB);
+
+            */
+
+            string NomeC;
+            double NotaC;
+            double MediaC=0;
+            int iC;
+
+            Console.Write("Exemplo com FOR !!!! \n");
+            Console.Write("Qual o nome do Aluno: ");
+            NomeC = Console.ReadLine();
+//             (Inicio ; Parada ; Incremento)           
+            for(iC = 0  ; iC < 3  ;   iC++     )
+            {
+                Console.Write("Nota " + (iC + 1) + ": ");
+                NotaC = Convert.ToDouble(Console.ReadLine()); 
+                MediaC += NotaC ;                
+            } 
+
+            MediaC /= iC;
+            Console.WriteLine("Aluno : " + NomeC + " com a Media :" + MediaC);
+
+
+            Console.ReadKey();
+        }
+    }
